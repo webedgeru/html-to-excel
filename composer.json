@@ -1,0 +1,46 @@
+{
+    "name": "sberdyug/html-to-excel",
+    "description": "Модуль и компонент Yii2 для преобразования HTML-таблиц в электронные таблицы Excel с использованием PhpSpreadsheet.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "module", "html", "table", "excel", "phpspreadsheet", "xlsx", "csv", "export"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "yiisoft/yii2": "~2.0.0",
+        "phpoffice/phpspreadsheet": "^1.18.0 || ^2.0 || ^3.0",
+        "ext-dom": "*",
+        "ext-libxml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0 || ^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sberdyug\\htmltoexcel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "sberdyug\\htmltoexcel\\tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "bootstrap": "sberdyug\\htmltoexcel\\Bootstrap"
+    }
+}
